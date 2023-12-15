@@ -1,20 +1,18 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-void print(int i,int n){
-
-    if (i<1)
-    {
-       return;
+void print(int i, int n) {
+    if (i < 1) {
+        return;
     }
-    print(,n);
-    cout<<i<<endl;
+    print(i - 1, n);
+    cout << i << endl;
 }
 
-int main(){
-int n;
-cin>>n;
-print(n,n);
-
+int main() {
+    int n;
+    cout << "Enter a positive integer N: ";
+    cin >> n;
+    print(n, n);
     return 0;
 }
